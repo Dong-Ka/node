@@ -1,0 +1,29 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Dong-Ka/node.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "dong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dong-Ka/node/issues"
+  },
+  "homepage": "https://github.com/Dong-Ka/node#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
