@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
+    "lint": "prettier --write --single-quote --trailing-comma all \"src/**/*.{js,scss}\" ",
     "start": "nodemon --inspect src/index.js",
     "watch": "sass -w src/resources/scss/app.scss src/public/css/app.css",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,13 +23,21 @@
   "homepage": "https://github.com/Dong-Ka/node#readme",
   "description": "",
   "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "express-handlebars": "^8.0.3",
-    "handlebars": "^4.7.8"
+    "handlebars": "^4.7.8",
+    "pg": "^8.16.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.7"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
     "morgan": "^1.10.0",
     "nodemon": "^3.1.10",
+    "prettier": "^3.5.3",
     "sass": "^1.89.2"
   }
 }
